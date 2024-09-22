@@ -9,6 +9,8 @@ import Registry from "./components/Registry";
 import Rsvp from "./components/Rsvp";
 import Origins from "./components/Origins";
 
+
+
 export default function Home() {
   return (
     <div className={styles.page}>
