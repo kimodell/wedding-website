@@ -8,20 +8,24 @@ import ImportantInfo from "./components/ImportantInfo";
 import Registry from "./components/Registry";
 import Rsvp from "./components/Rsvp";
 import Origins from "./components/Origins";
+import Intro from "./components/Intro";
 
 
 
 export default function Home() {
   return (
-    <div className={styles.page}>
+    <div>
       <NavBar />
-      <Origins />
-      <Schedule />
-      <Location />
-      <Travel />
-      <ImportantInfo />
-      <Registry />
-      <Rsvp />
+      <div className={styles.pageBody}>
+        <Intro />
+        <Origins />
+        <Schedule />
+        <Location />
+        <Travel />
+        <ImportantInfo />
+        <Registry />
+        <Rsvp />
+      </div>
     </div>
   );
 }
