@@ -1,4 +1,8 @@
+#origins {
+  padding: 20px;
+}
+
 .originsParagraph {
-  margin-bottom: 20px;
   text-align: justify;
+  margin-bottom: 20px;
 }

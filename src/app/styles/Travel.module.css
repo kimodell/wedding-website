@@ -1,0 +1,41 @@
+#travel {
+  padding: 20px;
+}
+
+.travelIntro {
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.travelInfo {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+
+.travelIcons {
+  display: flex;
+  flex-direction: column;
+  font-size: 7em;
+  color: #008000;
+  gap: 20px;
+}
+
+.travelText {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  margin-bottom: 20px;
+  flex-direction: column;
+}
+
+.flightsInfo h4, .flightsInfo p {
+  margin: 0;
+  padding-bottom: 7px;
+}
+
+.hotelsInfo h4, .hotelsInfo p {
+  margin: 0;
+  padding-bottom: 7px;
+}
+

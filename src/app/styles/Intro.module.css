@@ -1,4 +1,7 @@
+#intro {
+  padding: 20px;
+}
+
 .introParagraph {
-  margin-bottom: 20px;
   text-align: justify;
 }
