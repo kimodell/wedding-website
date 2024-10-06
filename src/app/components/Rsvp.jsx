@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { create } from "../api/sendEmail";
+import { sendEmail } from "../api/sendEmail";
 import styles from "../styles/Rsvp.module.css";
 
 
@@ -22,17 +22,27 @@ export default function Rsvp() {
     setFormData({ ...formData, [name]: value });
   };
 
-
   //handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
     //handle form submission here
-    console.log("form data:", formData);
+    console.log("form data from handlesubmit:", formData);
 
     try {
-      const result = await sendEmail(formData);
-      alert('RSVP sent successfully!');
-      console.log(result);
+      const response = await fetch('/api/sendEmail', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        alert('RSVP sent successfully!');
+        console.log("RSVP sent:", formData);
+      } else {
+        throw new Error('Failed to send RSVP.');
+      }
     } catch (error) {
       console.error('Error:', error);
       alert('There was an error sending your RSVP.');
@@ -138,7 +148,7 @@ export default function Rsvp() {
           />
         </div>
 
-        <button type="submit" onClick={() => create()}>Submit</button>
+        <button type="submit">Submit</button>
 
       </form>
     </div>
