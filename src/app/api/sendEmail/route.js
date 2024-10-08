@@ -4,8 +4,9 @@ const sgMail = require('@sendgrid/mail');
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 
-export async function sendEmail(formData) {
+export async function POST(request) {
 
+  const formData = await request.json();
   const { firstName, lastName, attending, dietRestrictions, songRequest1, songRequest2 } = formData;
 
   console.log("data from api", formData);
@@ -33,4 +34,11 @@ export async function sendEmail(formData) {
     .catch((error) => {
       console.error("Full error response:", error.response.body);
     });
+
+  return Response.json({ message: "ok"}); 
+}
+
+export async function GET(request) {
+  return Response.json({ key: 'value' });
+
 }

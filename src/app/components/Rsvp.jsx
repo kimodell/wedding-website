@@ -1,8 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { sendEmail } from "../api/sendEmail";
+import { sendEmail } from "../api/sendEmail/route";
 import styles from "../styles/Rsvp.module.css";
+import { useRouter } from "next/router";
 
 
 export default function Rsvp() {
@@ -28,6 +29,15 @@ export default function Rsvp() {
     //handle form submission here
     console.log("form data from handlesubmit:", formData);
 
+    // try {
+    //   const result = await sendEmail(formData);
+    //   alert('RSVP sent successfully!');
+    //   console.log("form data after try", formData);
+    // } catch (error) {
+    //   console.error('Error:', error);
+    //   alert('There was an error sending your RSVP.');
+    // }
+
     try {
       const response = await fetch('/api/sendEmail', {
         method: 'POST',
@@ -41,14 +51,31 @@ export default function Rsvp() {
         alert('RSVP sent successfully!');
         console.log("RSVP sent:", formData);
       } else {
-        throw new Error('Failed to send RSVP.');
+        const errorData = await response.json();
+        console.error('Error details:', errorData);
+        throw new Error(`Failed to send RSVP. Status: ${response.status}, Message: ${errorData || 'Unknown error'}`);
       }
     } catch (error) {
-      console.error('Error:', error);
+      console.error('Error:', error.message);
       alert('There was an error sending your RSVP.');
     }
-
   };
+
+  // async function handleSubmit(e) {
+  //   e.preventDefault();
+
+  //   const formData = {};
+
+  //   Array.from(e.currentTarget.elements).forEach(field => {
+  //     if ( !field.name ) return;
+  //     formData[field.name] = field.value;
+  //   });
+
+  //   await fetch('/api/sendEmail', {
+  //     method: 'POST',
+  //     body: JSON.stringify(formData)
+  //   });
+  // }
 
   return (
     <div id="rsvp">
