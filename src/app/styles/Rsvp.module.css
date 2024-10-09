@@ -1,4 +1,87 @@
-#Rsvp {
+#rsvp {
+  max-width: 600px;
+  margin: 0 auto;
   padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #333;
 }
 
+.rsvpDeadline {
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.rsvpIntro {
+  text-align: justify;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form > div {
+  margin-bottom: 15px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Input and radio button styling */
+.inputText {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.inputDiet {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 100px;
+}
+
+.inputRadio {
+  margin-right: 5px;
+}
+
+/* Radio label alignment */
+
+.radioGroup {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.labelRadio {
+  margin-right: 20px;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* Button styling */
+.submitButton {
+  background-color: #8b4513; 
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 1.1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-transform: uppercase;
+}
+
+.submitButton:hover {
+  background-color: #5c3317; 
+}

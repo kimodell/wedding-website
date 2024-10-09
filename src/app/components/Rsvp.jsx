@@ -29,15 +29,6 @@ export default function Rsvp() {
     //handle form submission here
     console.log("form data from handlesubmit:", formData);
 
-    // try {
-    //   const result = await sendEmail(formData);
-    //   alert('RSVP sent successfully!');
-    //   console.log("form data after try", formData);
-    // } catch (error) {
-    //   console.error('Error:', error);
-    //   alert('There was an error sending your RSVP.');
-    // }
-
     try {
       const response = await fetch('/api/sendEmail', {
         method: 'POST',
@@ -48,7 +39,7 @@ export default function Rsvp() {
       });
 
       if (response.ok) {
-        alert('RSVP sent successfully!');
+        alert('Thank you! RSVP sent successfully!');
         console.log("RSVP sent:", formData);
       } else {
         const errorData = await response.json();
@@ -61,60 +52,48 @@ export default function Rsvp() {
     }
   };
 
-  // async function handleSubmit(e) {
-  //   e.preventDefault();
-
-  //   const formData = {};
-
-  //   Array.from(e.currentTarget.elements).forEach(field => {
-  //     if ( !field.name ) return;
-  //     formData[field.name] = field.value;
-  //   });
-
-  //   await fetch('/api/sendEmail', {
-  //     method: 'POST',
-  //     body: JSON.stringify(formData)
-  //   });
-  // }
-
   return (
     <div id="rsvp">
       <h2>RSVP</h2>
-      <p>Deadline: Some date here</p>
-      <p>
+      <p className={styles.rsvpDeadline}>Deadline: <strong>Some date here</strong></p>
+      <p className={styles.rsvpIntro}>
         Please fill out one form per invited guest!
       </p>
-      <form onSubmit={handleSubmit}>
+      <form className={styles.form} onSubmit={handleSubmit}>
         {/* First Name */}
         <div>
-          <label htmlFor="firstName">First Name:</label>
+          <label className={styles.label} htmlFor="firstName">First Name:</label>
           <input
             type="text"
             id="firstName"
             name="firstName"
             value={formData.firstName}
             onChange={handleChange}
+            className={styles.inputText}
+            placeholder="Bilbo"
             required
           />
         </div>
 
         {/* Last Name */}
         <div>
-          <label htmlFor="lastName">Last Name:</label>
+          <label className={styles.label} htmlFor="lastName">Last Name:</label>
           <input
             type="text"
             id="lastName"
             name="lastName"
             value={formData.lastName}
             onChange={handleChange}
+            className={styles.inputText}
+            placeholder="Baggins"
             required
           />
         </div>
 
         {/* Attending Yes/No */}
         <div>
-          <label>Are you attending?</label>
-          <div>
+          <label className={styles.label} >Are you attending?</label>
+          <div className={styles.radioGroup}>
             <input
               type="radio"
               id="attendingYes"
@@ -122,9 +101,10 @@ export default function Rsvp() {
               value="yes"
               checked={formData.attending === 'yes'}
               onChange={handleChange}
+              className={styles.inputRadio}
               required
             />
-            <label htmlFor="attendingYes">I will accept your quest!</label>
+            <label className={styles.labelRadio} htmlFor="attendingYes">I will accept your quest!</label>
 
             <input
               type="radio"
@@ -133,49 +113,53 @@ export default function Rsvp() {
               value="no"
               checked={formData.attending === 'no'}
               onChange={handleChange}
+              className={styles.inputRadio}
               required
             />
-            <label htmlFor="attendingNo">I regretfully decline.</label>
+            <label className={styles.labelRadio} htmlFor="attendingNo">I regretfully decline.</label>
           </div>
         </div>
 
         {/* Dietary Restrictions */}
         <div>
-          <label htmlFor="dietRestrictions">Dietary Restrictions:</label>
-          <input
+          <label className={styles.label} htmlFor="dietRestrictions">Dietary Restrictions:</label>
+          <textarea
             type="text"
             id="dietRestrictions"
             name="dietRestrictions"
             value={formData.dietRestrictions}
             onChange={handleChange}
+            className={styles.inputDiet}
           />
         </div>
 
         {/* Song Request 1 */}
         <div>
-          <label htmlFor="songRequest1">Song Request #1:</label>
+          <label className={styles.label} htmlFor="songRequest1">Song Request #1:</label>
           <input
             type="text"
             id="songRequest1"
             name="songRequest1"
             value={formData.songRequest1}
             onChange={handleChange}
+            className={styles.inputText}
           />
         </div>
 
         {/* Song Request 2 */}
         <div>
-          <label htmlFor="songRequest2">Song Request #2:</label>
+          <label className={styles.label} htmlFor="songRequest2">Song Request #2:</label>
           <input
             type="text"
             id="songRequest2"
             name="songRequest2"
             value={formData.songRequest2}
             onChange={handleChange}
+            className={styles.inputText}
           />
         </div>
 
-        <button type="submit">Submit</button>
+        <button className={styles.submitButton} type="submit">Submit</button>
 
       </form>
     </div>
