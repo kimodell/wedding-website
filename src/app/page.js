@@ -9,6 +9,7 @@ import Registry from "./components/Registry";
 import Rsvp from "./components/Rsvp";
 import Origins from "./components/Origins";
 import Intro from "./components/Intro";
+import Footer from "./components/Footer";
 
 
 
@@ -26,6 +27,7 @@ export default function Home() {
         <Registry />
         <Rsvp />
       </div>
+      <Footer />
     </div>
   );
 }
