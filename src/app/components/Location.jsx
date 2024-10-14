@@ -1,6 +1,7 @@
 import styles from "../styles/Location.module.css"
 import Image from "next/image";
 import oast from "../images/oast.png"
+import Map from "./Map";
 
 export default function Location () {
   return (
@@ -21,6 +22,7 @@ export default function Location () {
         width={500}
         height={300}
       />
+      <Map/>
 
     </div>
   );
