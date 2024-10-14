@@ -1,3 +1,58 @@
 #location {
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.locationContent {
+  display: flex;
+  flex-direction: row-reverse; 
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 20px; 
+}
+
+.locationText {
+  text-align: left;
+  margin-right: 20px; 
+}
+
+.locationImage {
+  width: 100%; 
+  max-width: 500px; 
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.locationMap {
+  width: 100%;
+  max-width: 800px;
+  height: 300px;
+  margin: 0 auto; 
+}
+
+/* Media Query for Mobile View */
+@media (max-width: 768px) {
+  .locationContent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .locationText {
+    margin-right: 0;
+    text-align: center; 
+    margin-bottom: 10px; 
+  }
+
+  .locationImage {
+    margin-bottom: 20px;
+  }
+
+  .locationMap {
+    width: 500px;
+    height: 300px;
+  }
 }
