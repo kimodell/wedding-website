@@ -10,6 +10,7 @@ import Rsvp from "./components/Rsvp";
 import Origins from "./components/Origins";
 import Intro from "./components/Intro";
 import Footer from "./components/Footer";
+import FloatingActionButton from "./components/FloatingActionButtons";
 
 
 
@@ -26,6 +27,9 @@ export default function Home() {
         <ImportantInfo />
         <Registry />
         <Rsvp />
+        <div className={styles.fabWrapper}>
+          <FloatingActionButton />
+        </div>
       </div>
       <Footer />
     </div>

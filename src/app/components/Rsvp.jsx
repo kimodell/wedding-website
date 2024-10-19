@@ -130,6 +130,7 @@ export default function Rsvp() {
             value={formData.dietRestrictions}
             onChange={handleChange}
             className={styles.inputDiet}
+            placeholder="I require seven meals a day, with a side of seed cake!"
           />
         </div>
 
@@ -143,6 +144,7 @@ export default function Rsvp() {
             value={formData.songRequest1}
             onChange={handleChange}
             className={styles.inputText}
+            placeholder="They're taking the hobbits to Isengard - Legolas"
           />
         </div>
 
@@ -156,6 +158,7 @@ export default function Rsvp() {
             value={formData.songRequest2}
             onChange={handleChange}
             className={styles.inputText}
+            placeholder="Sandstorm - Darude"
           />
         </div>
 

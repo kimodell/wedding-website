@@ -1,0 +1,60 @@
+.fabContainer {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.fab {
+  background-color: #202e15;
+  color: white;  /* lines of hamburger menu*/
+  border-radius: 50%;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  border: none;
+  outline: none;
+  transition: transform 0.3s; 
+}
+
+
+.menu {
+  position: absolute;
+  bottom: 60px; /* Adjust this value to position the menu above the FAB */
+  right: 0;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  padding: 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.menu a:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .fabContainer {
+    bottom: 15px; 
+    right: 15px; 
+  }
+
+  .fab {
+    padding: 12px; 
+  }
+}

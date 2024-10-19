@@ -5,3 +5,7 @@
   padding: 30px;
   background-color: #f8f4ec;
 }
+
+.fabWrapper > * {
+  padding: 0; /* or whatever styles you want for content */
+}
