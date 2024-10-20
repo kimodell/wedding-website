@@ -4,6 +4,21 @@ import { useState } from "react";
 import { sendEmail } from "../api/sendEmail/route";
 import styles from "../styles/Rsvp.module.css";
 import { useRouter } from "next/router";
+import { Modal, Box, Button, Typography } from "@mui/material";
+import Image from "next/image";
+import thankyou from "../images/thankyou.jpg";
+import { GiFlexibleLamp } from "react-icons/gi";
+
+const modalStyle = {
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  width: 400,
+  bgcolor: "#f8f4ec",
+  boxShadow: 24,
+  p: 4,
+};
 
 
 export default function Rsvp() {
@@ -16,6 +31,9 @@ export default function Rsvp() {
     songRequest1: '',
     songRequest2: ''
   });
+
+  //modal visability state
+  const [openModal, setOpenModal] = useState(false);
 
   //handle input changes
   const handleChange = (e) => {
@@ -39,7 +57,7 @@ export default function Rsvp() {
       });
 
       if (response.ok) {
-        alert('Thank you! RSVP sent successfully!');
+        setOpenModal(true);
         console.log("RSVP sent:", formData);
       } else {
         const errorData = await response.json();
@@ -50,6 +68,19 @@ export default function Rsvp() {
       console.error('Error:', error.message);
       alert('There was an error sending your RSVP.');
     }
+  };
+
+  //close modal and clear form data
+  const handleClose = () => {
+    setOpenModal(false);
+    setFormData({
+      firstName: '',
+      lastName: '',
+      attending: 'yes',
+      dietRestrictions: '',
+      songRequest1: '',
+      songRequest2: ''
+    });
   };
 
   return (
@@ -162,9 +193,35 @@ export default function Rsvp() {
           />
         </div>
 
-        <button className={styles.submitButton} type="submit">Submit</button>
+        <button className={styles.submitButton} type="submit" color="#202e15">Submit</button>
 
       </form>
+
+      {/* Modal for successful RSVP submission */}
+      <Modal
+        open={openModal}
+        onClose={handleClose}
+      >
+        <Box sx={modalStyle}>
+          <h3>
+            Thank You!
+          </h3>
+          <p>
+            Your RSVP has been sent successfully!
+          </p>
+          <Image
+            className={styles.modalImage}
+            src={thankyou}
+            alt="Thank you image"
+          />
+          <p>
+            We look forward to seeing you there!
+          </p>
+          <Button onClick={handleClose} variant="contained" color="success" sx={{ mt: 2 }}>
+            Back
+          </Button>
+        </Box>
+      </Modal>
     </div>
   );
 }

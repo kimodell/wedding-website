@@ -71,7 +71,7 @@
 
 /* Button styling */
 .submitButton {
-  background-color: #8b4513; 
+  background-color: #202e15;
   color: white;
   border: none;
   padding: 10px;
@@ -84,4 +84,12 @@
 
 .submitButton:hover {
   background-color: #5c3317; 
+}
+
+.modalImage {
+  width: 100%;
+  max-width: 300px; 
+  height: auto; 
+  display: block; 
+  margin: 20px auto; 
 }
