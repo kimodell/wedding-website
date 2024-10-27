@@ -5,12 +5,14 @@
 .travelIntro {
   text-align: justify;
   margin-bottom: 20px;
+  padding: 20px;
 }
 
 .travelInfo {
   display: flex;
   flex-direction: row;
   gap: 100px;
+  padding: 20px;
 }
 
 .travelIcons {
@@ -19,6 +21,7 @@
   font-size: 7em;
   color: #008000;
   gap: 20px;
+  padding: 20px;
 }
 
 .travelText {

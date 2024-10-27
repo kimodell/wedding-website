@@ -6,7 +6,8 @@
 
 .info {
   text-align: justify;
-  line-height: 1.6; /* Improve readability */
+  line-height: 1.6;
+  padding: 20px;
 }
 
 /* For both desktop and mobile */
