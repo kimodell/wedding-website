@@ -3,9 +3,45 @@
   flex-direction: column;
   align-items: center;
   padding: 30px;
-  background-color: #f8f4ec;
+  background-color: white;
 }
 
 .fabWrapper > * {
-  padding: 0; /* or whatever styles you want for content */
+  padding: 0; 
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .pageBody > * {
+    padding: 15px;
+  }
+
+  .fabWrapper {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+
+  .pageBody > * {
+    font-size: 0.9em; 
+  }
+}
+
+@media (max-width: 480px) {
+  .pageBody > * {
+    padding: 10px;
+    font-size: 0.8em; 
+  }
+
+  .pageBody {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .fabWrapper {
+    bottom: 15px;
+    right: 15px;
+    z-index: 1000;
+  }
 }

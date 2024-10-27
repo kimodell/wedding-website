@@ -39,7 +39,7 @@ const Map = () => {
     <MapContainer
       center={ceremony}
       zoom={15}
-      style={{ height: '300px', width: '500px' }}
+      style={{ height: '300px', width: '100%' }}
     >
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

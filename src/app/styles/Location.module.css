@@ -7,22 +7,22 @@
 
 .locationContent {
   display: flex;
-  flex-direction: row-reverse; 
+  flex-direction: row-reverse;
   align-items: center;
   justify-content: center;
   gap: 10px;
   width: 100%;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
 }
 
 .locationText {
   text-align: left;
-  margin-right: 20px; 
+  margin-right: 20px;
 }
 
 .locationImage {
-  width: 100%; 
-  max-width: 500px; 
+  width: 100%;
+  max-width: 800px;
   height: auto;
   margin-bottom: 20px;
 }
@@ -30,11 +30,11 @@
 .locationMap {
   width: 100%;
   max-width: 800px;
-  height: 300px;
-  margin: 0 auto; 
+  height: auto;
+  margin: 0 auto;
 }
 
-/* Media Query for Mobile View */
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .locationContent {
     flex-direction: column;
@@ -43,16 +43,37 @@
 
   .locationText {
     margin-right: 0;
-    text-align: center; 
-    margin-bottom: 10px; 
+    text-align: center;
+    margin-bottom: 10px;
   }
 
   .locationImage {
-    margin-bottom: 20px;
+    max-width: 500px;
+    margin-bottom: 15px;
   }
 
   .locationMap {
-    width: 500px;
-    height: 300px;
+    max-width: 500px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  #location {
+    padding: 15px;
+  }
+
+  .locationText {
+    font-size: 0.9em;
+    margin-bottom: 8px;
+  }
+
+  .locationImage {
+    max-width: 100%;
+  }
+
+  .locationMap {
+    max-width: 100%;
+    height: 200px;
   }
 }
