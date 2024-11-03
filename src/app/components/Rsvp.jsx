@@ -86,7 +86,7 @@ export default function Rsvp() {
   return (
     <div id="rsvp">
       <h2>RSVP</h2>
-      <p className={styles.rsvpDeadline}>Deadline: <strong>Some date here</strong></p>
+      <p className={styles.rsvpDeadline}>Deadline: <strong>August 1, 2025</strong></p>
       <p className={styles.rsvpIntro}>
         Please fill out one form per invited guest!
       </p>
