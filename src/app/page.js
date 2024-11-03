@@ -32,8 +32,8 @@ export default function Home() {
           height={500}
         />
        </div>
-        <Schedule />
         <Location />
+        <Schedule />
         <Travel />
         <ImportantInfo />
         <Registry />
