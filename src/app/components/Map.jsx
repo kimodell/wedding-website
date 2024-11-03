@@ -10,6 +10,7 @@ import "leaflet-extra-markers";
 import { renderToStaticMarkup } from 'react-dom/server';
 import { GiBigDiamondRing } from "react-icons/gi";
 import { TbParkingCircleFilled  } from "react-icons/tb";
+import { useEffect, useState } from 'react';
 
 delete L.Icon.Default.prototype._getIconUrl;
 L.Icon.Default.mergeOptions({
@@ -39,7 +40,7 @@ const Map = () => {
     <MapContainer
       center={ceremony}
       zoom={15}
-      style={{ height: '300px', width: '100%' }}
+      style={{ height: '300px', width: '500px' }}
     >
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
