@@ -72,7 +72,7 @@
 /* Button styling */
 .submitButton {
   background: -webkit-linear-gradient(left,#143518, #506c47, #90a473, #c0cca6 );
-  color: #e5edd3;
+  color: #eaf0db;
   border: none;
   padding: 10px;
   font-size: 1.1rem;
@@ -91,5 +91,6 @@
   max-width: 300px; 
   height: auto; 
   display: block; 
-  margin: 20px auto; 
+  margin: 20px auto;
+  border-radius: 5px; 
 }

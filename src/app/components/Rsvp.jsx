@@ -15,9 +15,14 @@ const modalStyle = {
   left: '50%',
   transform: 'translate(-50%, -50%)',
   width: 400,
-  bgcolor: "#f8f4ec",
+  bgcolor: "#eaf0db",
   boxShadow: 24,
   p: 4,
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  alignItems: 'center',
+  gap: '10px',
 };
 
 
@@ -217,9 +222,9 @@ export default function Rsvp() {
           <p>
             We look forward to seeing you there!
           </p>
-          <Button onClick={handleClose} variant="contained" color="success" sx={{ mt: 2 }}>
+          <button className={styles.submitButton} onClick={handleClose} variant="contained" sx={{ mt: 2 }}>
             Back
-          </Button>
+          </button>
         </Box>
       </Modal>
     </div>
