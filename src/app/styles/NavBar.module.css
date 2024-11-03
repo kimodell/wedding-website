@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
 
 .nav {
-  background-color: #202e15;
   padding: 20px; 
-  color: white; 
+  color: #344c34;
   display: flex; 
   flex-direction: column; 
   align-items: center; 
@@ -56,10 +55,10 @@
 
 .navbarlist a {
   text-decoration: none; 
-  color: white; 
+  color: #344c34; 
   transition: color 0.3s; 
 }
 
 .navbarlist a:hover {
-  color: #3498db; 
+  color: #daac37; 
 }
