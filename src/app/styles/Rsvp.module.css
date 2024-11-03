@@ -71,8 +71,8 @@
 
 /* Button styling */
 .submitButton {
-  background-color: #202e15;
-  color: white;
+  background: -webkit-linear-gradient(left,#143518, #506c47, #90a473, #c0cca6 );
+  color: #e5edd3;
   border: none;
   padding: 10px;
   font-size: 1.1rem;
@@ -83,7 +83,7 @@
 }
 
 .submitButton:hover {
-  background-color: #5c3317; 
+  background: -webkit-linear-gradient(right,#143518, #506c47, #90a473, #c0cca6 ); 
 }
 
 .modalImage {
