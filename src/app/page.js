@@ -30,6 +30,7 @@ export default function Home() {
           src={photo1}
           alt="Chris and Kim"
           height={500}
+          style={{borderRadius: "5px"}}
         />
        </div>
         <Location />

@@ -27,6 +27,7 @@
   max-width: 800px;
   height: auto;
   margin-bottom: 20px;
+  border-radius: 5px;
 }
 
 .locationMap {
@@ -52,6 +53,7 @@
   .locationImage {
     max-width: 500px;
     margin-bottom: 15px;
+    border-radius: 5px;
   }
 
   .locationMap {
@@ -72,6 +74,7 @@
 
   .locationImage {
     max-width: 100%;
+    border-radius: 5px;
   }
 
   .locationMap {
