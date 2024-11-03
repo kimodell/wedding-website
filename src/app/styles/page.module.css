@@ -10,8 +10,7 @@
   display: flex; 
   flex-direction: row; 
   align-items: center; 
-  width: 100%;
-  margin-bottom: 20px;  
+  width: 100%; 
   gap: 20px;
 }
 
@@ -50,7 +49,6 @@
   .pageIntroText {
     text-align: center;
   }
-  
 
   .fabWrapper {
     position: fixed;
@@ -61,6 +59,11 @@
 
   .pageBody > * {
     font-size: 0.9em; 
+  }
+
+  .pageImage {
+    max-width: 550px;
+    margin: 0;
   }
 }
 
