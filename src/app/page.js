@@ -17,7 +17,7 @@ import photo1 from "./images/photo1.jpg"
 
 export default function Home() {
   return (
-    <div>
+    <div className={styles.page}>
       <NavBar />
       <div className={styles.pageBody}>
       <div className={styles.pageIntro}>
