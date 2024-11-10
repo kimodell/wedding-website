@@ -26,7 +26,7 @@
   position: absolute;
   bottom: 60px; /* Adjust this value to position the menu above the FAB */
   right: 0;
-  background-color: #eaf0db;
+  background-color: white;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   padding: 10px;
