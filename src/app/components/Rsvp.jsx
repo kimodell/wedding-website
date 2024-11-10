@@ -15,7 +15,7 @@ const modalStyle = {
   left: '50%',
   transform: 'translate(-50%, -50%)',
   width: 400,
-  bgcolor: "#eaf0db",
+  bgcolor: "white",
   boxShadow: 24,
   p: 4,
   display: 'flex',
@@ -23,6 +23,7 @@ const modalStyle = {
   justifyContent: 'center',
   alignItems: 'center',
   gap: '10px',
+  borderRadius: '5px', 
 };
 
 
@@ -220,7 +221,7 @@ export default function Rsvp() {
             alt="Thank you image"
           />
           <p>
-            We look forward to seeing you there!
+            We can't wait to see you!
           </p>
           <button className={styles.submitButton} onClick={handleClose} variant="contained" sx={{ mt: 2 }}>
             Back
