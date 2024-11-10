@@ -23,16 +23,8 @@
 }
 
 /* Mobile view adjustments */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   #info {
     padding: 15px;
-  }
-
-  .infoQuestions {
-    /*font-size: 1rem;*/
-  }
-
-  .infoAnswers {
-    /*font-size: 0.95rem;*/
   }
 }

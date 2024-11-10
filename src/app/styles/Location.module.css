@@ -32,13 +32,12 @@
 
 .locationMap {
   width: 100%;
-  max-width: 800px;
   padding: 20px;
   height: 500px;
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
+@media (min-width: 600px) and (max-width: 1024px)  {
   .locationContent {
     flex-direction: column;
     align-items: center;
@@ -49,6 +48,12 @@
     text-align: center;
     margin-bottom: 10px;
   }
+
+  .locationText p {
+    margin-bottom: 8px;
+    text-align: justify;
+  }
+
 
   .locationImage {
     max-width: 500px;
@@ -62,14 +67,24 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 599px) {
   #location {
     padding: 15px;
   }
 
+  .locationContent {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .locationText {
-    /*font-size: 0.9em;*/
     margin-bottom: 8px;
+    text-align: center;
+  }
+
+  .locationText p {
+    margin-bottom: 8px;
+    text-align: justify;
   }
 
   .locationImage {
