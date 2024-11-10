@@ -58,7 +58,7 @@
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
+@media (min-width: 600px) and (max-width: 1024px) {
   .pageBody > * {
     padding: 15px;
   }
@@ -81,7 +81,7 @@
   }
 
   .pageBody > * {
-    font-size: 0.9em; 
+    font-size: 0.9em;
   }
 
   .pageImage {
@@ -91,7 +91,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 599px) {
   .pageBody > * {
     padding: 10px;
     font-size: 0.8em; 

@@ -5,7 +5,7 @@ export default function Registry () {
     <div id="registry">
       <h2>Registry</h2>
       <p>
-        Registry Section!
+        Money please.
       </p>
     </div>
   );

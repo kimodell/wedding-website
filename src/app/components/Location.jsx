@@ -20,8 +20,6 @@ export default function Location() {
           className={styles.locationImage}
           src={oast}
           alt="Niagara Oast House Brewers"
-          width={500}
-          height={300}
         />
       </div>
       <Map className={styles.locationMap} />
