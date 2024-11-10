@@ -41,7 +41,6 @@ const Map = () => {
     <MapContainer
       center={ceremony}
       zoom={15}
-      //style={{ height: '300px', width: '500px' }}
       className={styles.locationMap}
     >
       <TileLayer

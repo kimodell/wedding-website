@@ -28,9 +28,7 @@ export default function Home() {
         <Image
           className={styles.pageImage}
           src={photo1}
-          alt="Chris and Kim"
-          height={500}
-          style={{borderRadius: "5px"}}
+          alt="Chris and Kim"         
         />
        </div>
         <Location />
