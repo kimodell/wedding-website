@@ -8,7 +8,7 @@ import styles from '../styles/FloatingActionButton.module.css';
 export default function FloatingActionButton() {
   const [isVisible, setIsVisible] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const navbarHeight = 60; // Adjust this value to match your navbar height.
+  const navbarHeight = 30; // Adjust this value to match your navbar height.
 
   useEffect(() => {
     const handleScroll = () => {
