@@ -18,9 +18,9 @@
 .travelIcons {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   font-size: 7em;
   color: #344c34;
-  gap: 20px;
   padding: 20px;
 }
 
@@ -37,8 +37,24 @@
   padding-bottom: 7px;
 }
 
-.hotelsInfo h4, .hotelsInfo p {
+.hotelsInfo h4, .hotelsInfo p .hotelsInfo a {
   margin: 0;
   padding-bottom: 7px;
+}
+
+.hotelsLinks {
+  margin: 0;
+  padding: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hotelsLinks a {
+  color: #344c34;
+}
+
+.hotelsLinks a:hover {
+  color: #daac37;
 }
 
