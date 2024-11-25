@@ -1,7 +1,9 @@
 import styles from "../styles/Travel.module.css";
 import { GiAirplaneDeparture } from "react-icons/gi";
 import { MdLocalHotel } from "react-icons/md";
-import Link from "next/link";
+import { FaCarSide } from "react-icons/fa";
+
+
 
 export default function Travel() {
   return (
@@ -14,6 +16,7 @@ export default function Travel() {
         <div className={styles.travelIcons}>
           <GiAirplaneDeparture className={styles.planeIcon} />
           <MdLocalHotel className={styles.hotelIcon} />
+          <FaCarSide />
         </div>
         <div className={styles.travelText}>
           <div className={styles.travelFlights}>
@@ -37,7 +40,12 @@ export default function Travel() {
               <p>Block of rooms coming soon!</p>
             </div>
           </div>
-
+          <div className={styles.travelCars}>
+            <div className={styles.carsInfo}>
+              <h4>Car Rentals</h4>
+              <p>Coming soon!</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
