@@ -11,7 +11,7 @@ export default function Origins () {
       <p className={styles.originsParagraph}>
         15 years later, we are ready to embark on the greatest quest of our lives IRL. From our humble beginnings in Azeroth to this momentous occasion that has brought you here today!
       </p>
-      <h3>
+      <h3 className={styles.originsh3}>
         Achievement Unlocked!
       </h3>
     </div>

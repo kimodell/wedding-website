@@ -4,6 +4,9 @@
 
 .originsParagraph {
   text-align: justify;
-  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.originsh3 {
   padding: 20px;
 }
