@@ -78,7 +78,6 @@
   font-size: 1.1rem;
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s;
   text-transform: uppercase;
 }
 
@@ -86,6 +85,8 @@
   background: -webkit-linear-gradient(right,#143518, #506c47, #90a473, #c0cca6 ); 
 }
 
+
+/*modal styling*/
 .modalImage {
   width: 100%;
   max-width: 300px; 
@@ -94,3 +95,11 @@
   margin: 20px auto;
   border-radius: 5px; 
 }
+
+
+ @media (max-width: 1730px) {
+  .modalImage {
+    max-width: 200px;
+  }
+}
+ 
