@@ -52,6 +52,7 @@
 
 .hotelsLinks a {
   color: #344c34;
+  transition: color 0.3s; 
 }
 
 .hotelsLinks a:hover {
