@@ -41,7 +41,7 @@ export default function FloatingActionButton() {
             <a href="#location" onClick={() => setIsMenuOpen(false)}>Location</a>
             <a href="#travel" onClick={() => setIsMenuOpen(false)}>Travel</a>
             <a href="#info" onClick={() => setIsMenuOpen(false)}>Important Information</a>
-            <a href="#registry" onClick={() => setIsMenuOpen(false)}>Registry</a>
+            <a href="#registry" onClick={() => setIsMenuOpen(false)}>Gifts</a>
             <a href="#rsvp" onClick={() => setIsMenuOpen(false)}>RSVP</a>
           </div>
         )}

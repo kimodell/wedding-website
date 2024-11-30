@@ -14,7 +14,7 @@ export default function NavBar () {
         <li><a href="#location">Location</a></li>
         <li><a href="#travel">Travel</a></li>
         <li><a href="#info">Important Information</a></li>
-        <li><a href="#registry">Registry</a></li>
+        <li><a href="#registry">Gifts</a></li>
         <li><a href="#rsvp">RSVP</a></li>
       </ul>
     </nav>
