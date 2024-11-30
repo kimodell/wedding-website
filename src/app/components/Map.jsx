@@ -29,7 +29,7 @@ const createCustomIcon = (icon) => {
   });
 };
 
-const Map = () => {
+export default function Map () {
   
   const ceremony = [43.24005, -79.09830];
   const parking = [43.23977, -79.09937];
@@ -60,5 +60,3 @@ const Map = () => {
     </MapContainer>
   );
 };
-
-export default Map;
