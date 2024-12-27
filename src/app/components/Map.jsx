@@ -44,7 +44,7 @@ export default function Map () {
     <MapContainer
       center={ceremony}
       zoom={15}
-      style={{ height: "30vw", width: "53vw" }}
+      style={{ height: "40vh", width: "70vw" }}
     >
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
