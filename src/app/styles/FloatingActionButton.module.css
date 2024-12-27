@@ -41,6 +41,7 @@
   padding: 8px;
   border-radius: 4px;
   transition: background-color 0.2s;
+  transition: color 0.3s; 
 }
 
 .menu a:hover {
