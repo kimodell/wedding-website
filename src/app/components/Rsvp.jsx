@@ -221,7 +221,7 @@ export default function Rsvp() {
             alt="Thank you image"
           />
           <p>
-            We can't wait to see you!
+            We can&apos;t wait to see you!
           </p>
           <button className={styles.submitButton} onClick={handleClose} variant="contained" sx={{ mt: 2 }}>
             Back

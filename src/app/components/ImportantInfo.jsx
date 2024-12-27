@@ -28,14 +28,14 @@ export default function ImportantInfo() {
         <p className={styles.infoAnswers}>
           The ceremony starts at 6:30 pm. We ask that everyone arrive at least 15 minutes early to get seated and comfortable.
         </p>
-        <p className={styles.infoQuestions}>What if I can't make it?</p>
+        <p className={styles.infoQuestions}>What if I can&apos;t make it?</p>
         <p className={styles.infoAnswers}>
-          You will be missed and we are sad you can't come! Please let us know as soon as possible by filling out the RSVP form below!
+          You will be missed and we are sad you can&apos;t come! Please let us know as soon as possible by filling out the RSVP form below!
         </p>
         <p className={styles.infoQuestions}>Where do I park?</p>
         <p className={styles.infoAnswers}>
           Our venue requires all of our guests park in the overflow lot.
-          Please refer to the "Location" section of this page for directions and more information.
+          Please refer to the &quot;Location&quot; section of this page for directions and more information.
         </p>
         <p className={styles.infoQuestions}>Can I take pictures during the ceremony?</p>
         <p className={styles.infoAnswers}>

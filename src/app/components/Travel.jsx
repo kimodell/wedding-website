@@ -50,7 +50,7 @@ export default function Travel() {
             <div className={styles.carsInfo}>
               <h4>Car Rentals</h4>
               <p>
-                We've secured special discount codes for car rentals through <a className={styles.carLinks} href="https://www.budget.com/">Budget</a> and <a className={styles.carLinks} href="https://www.avis.com/">Avis</a> to aid you in your journey. 
+                We&apos;ve secured special discount codes for car rentals through <a className={styles.carLinks} href="https://www.budget.com/">Budget</a> and <a className={styles.carLinks} href="https://www.avis.com/">Avis</a> to aid you in your journey. 
                 These codes will be valid for one week before and one week after the wedding. 
               </p>
               <p>

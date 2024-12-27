@@ -12,7 +12,7 @@ export default function Registry() {
           If you would like to honor us with a gift, we kindly ask for monetary contributions in place of a registry. This will help us create lasting memories as we start this new chapter of our story together.
         </p>
         <p className={styles.registryParagraph}>
-          Thank you for your love and support - we can't wait to celebrate with you!
+          Thank you for your love and support - we can&apos;t wait to celebrate with you!
         </p>
       </div>
     </div>
