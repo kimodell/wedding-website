@@ -32,7 +32,7 @@
   flex-direction: column;
 }
 
-.flightsInfo h4, .flightsInfo p {
+.flightsInfo h4, .flightsInfo p, .carsInfo h4, .carsInfo p {
   margin: 0;
   padding-bottom: 7px;
 }
@@ -59,3 +59,11 @@
   color: #daac37;
 }
 
+.carLinks {
+  color: #344c34;
+  transition: color 0.3s; 
+}
+
+.carLinks:hover {
+  color: #daac37;
+}
