@@ -2,6 +2,9 @@ import styles from "../styles/Location.module.css";
 import Image from "next/image";
 import oast from "../images/oast.png";
 import Map from "./Map";
+import dynamic from "next/dynamic";
+
+const MapComponent = dynamic(() => import("./Map"), { ssr: false });
 
 export default function Location() {
   return (
@@ -22,7 +25,7 @@ export default function Location() {
           alt="Niagara Oast House Brewers"
         />
       </div>
-      <Map className={styles.locationMap} />
+      <MapComponent />
     </div>
   );
 }

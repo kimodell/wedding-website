@@ -10,8 +10,7 @@ import "leaflet-extra-markers";
 import { renderToStaticMarkup } from 'react-dom/server';
 import { GiBigDiamondRing } from "react-icons/gi";
 import { TbParkingCircleFilled  } from "react-icons/tb";
-import styles from "../styles/Location.module.css";
-import { useEffect } from 'react';
+
 
 
 export default function Map () {
