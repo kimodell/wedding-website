@@ -44,6 +44,7 @@ export async function GET(request) {
 
   return Response.json({ key: 'value' },{
     headers: {
+      'Cache-Control': 'no-store, no-cache, must-revalidate, max-age=0',
       'Content-Type': 'application/json',
     },
   });
