@@ -39,8 +39,9 @@ export async function POST(request) {
 }
 
 export async function GET(request) {
-  return new Response(JSON.stringify({ key: 'value' }), {
+  return Response.json({ key: 'value' },{
     headers: {
+      'Cache-Control': 'no-store, no-cache, must-revalidate',
       'Content-Type': 'application/json',
     },
   });
