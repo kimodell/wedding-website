@@ -67,3 +67,22 @@
 .carLinks:hover {
   color: #daac37;
 }
+
+@media (min-width: 600px) and (max-width: 1024px){
+  .travelIcons {
+    font-size: 7em;
+    padding: 20px 10px 30px 10px;
+  }
+
+}
+
+@media (max-width: 599px) {
+  .travelIcons {
+    font-size: 6em;
+    padding: 20px 0 70px 0;
+  }
+
+  .travelInfo {
+    gap: 30px;
+  }
+}

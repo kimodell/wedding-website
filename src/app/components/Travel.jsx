@@ -21,9 +21,10 @@ export default function Travel() {
         <div className={styles.travelText}>
           <div className={styles.travelFlights}>
             <div className={styles.flightsInfo}>
-              <h4>Hamilton International Airport (YHM)</h4>
+              <h4>Airports</h4>
+              <p> <strong>Hamilton International Airport (YHM)</strong></p>
               <p>~1 hour from Niagara-on-the-lake</p>
-              <h4>Toronto Pearson Airport (YYZ)</h4>
+              <p><strong>Toronto Pearson Airport (YYZ)</strong></p>
               <p>~2 hours and 15 minutes from Niagara-on-the-lake</p>
             </div>
           </div>
