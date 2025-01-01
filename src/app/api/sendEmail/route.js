@@ -39,6 +39,9 @@ export async function POST(request) {
 }
 
 export async function GET(request) {
+
+  console.log("GET request received");
+
   return Response.json({ key: 'value' },{
     headers: {
       'Cache-Control': 'no-store, no-cache, must-revalidate',
