@@ -6,10 +6,12 @@ sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 export async function POST(request) {
 
+  console.log("POST request received");
+
   const formData = await request.json();
   const { firstName, lastName, attending, dietRestrictions, songRequest1, songRequest2 } = formData;
 
-  console.log("data from api", formData);
+  console.log("Incoming data from api", formData);
 
   const msg = {
     to: process.env.RECIPIENT_EMAIL,
@@ -25,17 +27,31 @@ export async function POST(request) {
     `,
   };
 
-  sgMail
-    .send(msg)
-    .then((response) => {
-      console.log(response[0].statusCode);
-      console.log(response[0].headers);
-    })
-    .catch((error) => {
-      console.error("Full error response:", error.response.body);
-    });
+  console.log("Preparing to send email with message:", msg);
 
-  return Response.json({ message: "ok"}); 
+  // sgMail
+  //   .send(msg)
+  //   .then((response) => {
+  //     console.log(response[0].statusCode);
+  //     console.log(response[0].headers);
+  //   })
+  //   .catch((error) => {
+  //     console.error("Full error response:", error.response.body);
+  //   });
+
+  // return Response.json({ message: "ok"}); 
+
+  try {
+    const response = await sgMail.send(msg);
+    console.log("SendGrid Response Status:", response[0].statusCode);
+    return Response.json({ message: "RSVP sent successfully" });
+  } catch (error) {
+    console.error("Error sending email:", error.response?.body || error.message);
+    return Response.json(
+      { message: "Failed to send RSVP", error: error.response?.body || error.message },
+      {statusCode}
+    );
+  }
 }
 
 export async function GET(request) {
