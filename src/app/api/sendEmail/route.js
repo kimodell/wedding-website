@@ -29,36 +29,36 @@ export async function POST(request) {
 
   console.log("Preparing to send email with message:", msg);
 
-  // sgMail
-  //   .send(msg)
-  //   .then((response) => {
-  //     console.log(response[0].statusCode);
-  //     console.log(response[0].headers);
-  //   })
-  //   .catch((error) => {
-  //     console.error("Full error response:", error.response.body);
-  //   });
+  await sgMail
+    .send(msg)
+    .then((response) => {
+      console.log(response[0].statusCode);
+      console.log(response[0].headers);
+    })
+    .catch((error) => {
+      console.error("Full error response:", error.response.body);
+    });
 
-  // return Response.json({ message: "ok"}); 
+  return Response.json({ message: "ok"}); 
 
-  try {
-    const response = await sgMail.send(msg);
-    console.log("SendGrid Response Status:", response[0].statusCode);
-    return Response.json({ message: "RSVP sent successfully" });
-  } catch (error) {
-    console.error("Error sending email:", error.response?.body || error.message);
-    return Response.json(
-      { message: "Failed to send RSVP", error: error.response?.body || error.message },
-      {statusCode}
-    );
-  }
+  // try {
+  //   const response = await sgMail.send(msg);
+  //   console.log("SendGrid Response Status:", response[0].statusCode);
+  //   return Response.json({ message: "RSVP sent successfully" });
+  // } catch (error) {
+  //   console.error("Error sending email:", error.response?.body || error.message);
+  //   return Response.json(
+  //     { message: "Failed to send RSVP", error: error.response?.body || error.message },
+  //     { status: statusCode }
+  //   );
+  // }
 }
 
 export async function GET(request) {
 
   console.log("GET request received");
 
-  return Response.json({ key: 'value' },{
+  return Response.json({ key: 'value' }, {
     headers: {
       'Cache-Control': 'no-store, no-cache, must-revalidate, max-age=0',
       'Content-Type': 'application/json',
