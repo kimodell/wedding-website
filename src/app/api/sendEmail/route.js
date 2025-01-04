@@ -40,18 +40,6 @@ export async function POST(request) {
     });
 
   return Response.json({ message: "ok"}); 
-
-  // try {
-  //   const response = await sgMail.send(msg);
-  //   console.log("SendGrid Response Status:", response[0].statusCode);
-  //   return Response.json({ message: "RSVP sent successfully" });
-  // } catch (error) {
-  //   console.error("Error sending email:", error.response?.body || error.message);
-  //   return Response.json(
-  //     { message: "Failed to send RSVP", error: error.response?.body || error.message },
-  //     { status: statusCode }
-  //   );
-  // }
 }
 
 export async function GET(request) {
