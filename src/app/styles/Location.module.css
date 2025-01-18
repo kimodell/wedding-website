@@ -30,9 +30,7 @@
   border-radius: 5px;
 }
 
-
-/* Responsive adjustments */
-@media (min-width: 600px) and (max-width: 1024px)  {
+@media (min-width: 600px) and (max-width: 1024px) {
   .locationContent {
     flex-direction: column;
     align-items: center;

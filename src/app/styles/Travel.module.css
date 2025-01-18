@@ -32,12 +32,17 @@
   flex-direction: column;
 }
 
-.flightsInfo h4, .flightsInfo p, .carsInfo h4, .carsInfo p {
+.flightsInfo h4,
+.flightsInfo p,
+.carsInfo h4,
+.carsInfo p {
   margin: 0;
   padding-bottom: 7px;
 }
 
-.hotelsInfo h4, .hotelsInfo p, .hotelsInfo a {
+.hotelsInfo h4,
+.hotelsInfo p,
+.hotelsInfo a {
   margin: 0;
   padding-bottom: 7px;
 }
@@ -52,7 +57,7 @@
 
 .hotelsLinks a {
   color: #344c34;
-  transition: color 0.3s; 
+  transition: color 0.3s;
 }
 
 .hotelsLinks a:hover {
@@ -61,14 +66,14 @@
 
 .carLinks {
   color: #344c34;
-  transition: color 0.3s; 
+  transition: color 0.3s;
 }
 
 .carLinks:hover {
   color: #daac37;
 }
 
-@media (min-width: 600px) and (max-width: 1024px){
+@media (min-width: 600px) and (max-width: 1024px) {
   .travelIcons {
     font-size: 7em;
     padding: 20px 10px 30px 10px;
