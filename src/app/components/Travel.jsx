@@ -55,7 +55,7 @@ export default function Travel() {
                 These codes will be valid for one week before and one week after the wedding.
               </p>
               <p>
-                Should you require a discount code for your travels, simply to reach out to us for the details!
+                Should you require a discount code for your travels, simply reach out to us for the details!
               </p>
             </div>
           </div>
