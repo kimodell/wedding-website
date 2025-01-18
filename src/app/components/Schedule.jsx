@@ -1,16 +1,16 @@
-import styles from "../styles/Schedule.module.css"
+import styles from "../styles/Schedule.module.css";
 
-export default function Schedule () {
+export default function Schedule() {
   return (
     <div id="schedule">
       <h2>Schedule</h2>
       <p className={styles.schedule}>
         <strong>6:30 pm:</strong> Ceremony
-        <br/> 
+        <br />
         <strong>7:30 pm:</strong> Dinner
-        <br/>
+        <br />
         <strong>8:30 pm:</strong> Speeches
-        <br/>
+        <br />
         <strong>9:00 pm:</strong> The long expected party!
       </p>
     </div>

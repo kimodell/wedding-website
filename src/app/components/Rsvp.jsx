@@ -23,7 +23,7 @@ const modalStyle = {
   justifyContent: 'center',
   alignItems: 'center',
   gap: '10px',
-  borderRadius: '5px', 
+  borderRadius: '5px',
 };
 
 
@@ -50,7 +50,6 @@ export default function Rsvp() {
   //handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
-    //handle form submission here
     console.log("form data from handlesubmit:", formData);
 
     try {

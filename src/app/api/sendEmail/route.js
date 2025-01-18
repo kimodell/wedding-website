@@ -39,7 +39,7 @@ export async function POST(request) {
       console.error("Full error response:", error.response.body);
     });
 
-  return Response.json({ message: "ok"}); 
+  return Response.json({ message: "ok" });
 }
 
 export async function GET(request) {

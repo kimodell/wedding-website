@@ -51,8 +51,8 @@ export default function Travel() {
             <div className={styles.carsInfo}>
               <h4>Car Rentals</h4>
               <p>
-                We&apos;ve secured special discount codes for car rentals through <a className={styles.carLinks} href="https://www.budget.com/">Budget</a> and <a className={styles.carLinks} href="https://www.avis.com/">Avis</a> to aid you in your journey. 
-                These codes will be valid for one week before and one week after the wedding. 
+                We&apos;ve secured special discount codes for car rentals through <a className={styles.carLinks} href="https://www.budget.com/">Budget</a> and <a className={styles.carLinks} href="https://www.avis.com/">Avis</a> to aid you in your journey.
+                These codes will be valid for one week before and one week after the wedding.
               </p>
               <p>
                 Should you require a discount code for your travels, simply to reach out to us for the details!
