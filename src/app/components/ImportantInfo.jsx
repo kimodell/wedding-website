@@ -17,8 +17,8 @@ export default function ImportantInfo() {
         </p>
         <p className={styles.infoQuestions}>Will the wedding be outdoors or indoors?</p>
         <p className={styles.infoAnswers}>
-          The ceremony will be held outside, at the back of Oast House, right in front of the Vineyard!
-          Following the ceremony, everyone will move inside and upstairs to the Hayloft.
+          The ceremony will be held outside, in the field south-west of the Oast House barn, ~5-7 minute walk from the brewery.
+          Following the ceremony, everyone who has not been asked to stay back for photos will move inside and upstairs to the Oast House Hayloft.
         </p>
         <p className={styles.infoQuestions}>When do I need to RSVP?</p>
         <p className={styles.infoAnswers}>
@@ -27,6 +27,7 @@ export default function ImportantInfo() {
         <p className={styles.infoQuestions}>What time should I arrive?</p>
         <p className={styles.infoAnswers}>
           The ceremony starts at 6:30 pm. We ask that everyone arrive at least 15 minutes early to get seated and comfortable.
+          Remember, the ceremony is a 5-7 minute walk from the washroom, so make sure to stop at the barn to pee before making your way over!
         </p>
         <p className={styles.infoQuestions}>What if I can&apos;t make it?</p>
         <p className={styles.infoAnswers}>
