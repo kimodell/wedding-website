@@ -33,7 +33,7 @@ export default function Map() {
     });
   };
 
-  const ceremony = [43.24005, -79.09830];
+  const ceremony = [43.238209, -79.101139];
   const parking = [43.23977, -79.09937];
 
   const ceremonyIcon = createCustomIcon(<GiBigDiamondRing style={{ color: '#6b6b6b', fontSize: '40px', fontWeight: 'bold' }} />);
