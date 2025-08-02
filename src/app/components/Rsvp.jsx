@@ -209,10 +209,10 @@ export default function Rsvp() {
       >
         <Box sx={modalStyle}>
           <h3>
-            Thank You!
+            The deadline has passed!
           </h3>
           <p>
-            Your RSVP has been sent successfully!
+            Thank you everyone who RSVP'd!
           </p>
           <Image
             className={styles.modalImage}
