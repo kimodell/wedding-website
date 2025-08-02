@@ -212,7 +212,7 @@ export default function Rsvp() {
             The deadline has passed!
           </h3>
           <p>
-            Thank you everyone who RSVP'd!
+            Thank you everyone who RSVP&apos;d!
           </p>
           <Image
             className={styles.modalImage}
